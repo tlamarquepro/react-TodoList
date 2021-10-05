@@ -3,6 +3,8 @@ import React, { useState } from "react";
 const AddTodoForm = ({ addNewTodo }) => {
   const [addTodo, setAddTodo] = useState("");
 
+  const [todotomodify, setTodoTomo]
+
   const handleTodo = (e) => {
     e.preventDefault();
     addNewTodo(addTodo);
@@ -21,8 +23,8 @@ const AddTodoForm = ({ addNewTodo }) => {
             onChange={(e) => {
               setAddTodo(e.target.value);
             }}
-          ></input>
-          <input className="btn btn-success mt-4" type="submit"></input>
+          />
+          <input className="btn btn-success mt-4" type="submit" />
         </div>
       </div>
     </form>
